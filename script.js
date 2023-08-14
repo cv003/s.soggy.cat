@@ -9,7 +9,7 @@ function preload() {
 }
 
 preload(
-    "https://files.catbox.moe/450xp1.gif",
+    "assets/images/boom.gif",
     "https://soggy.cat/img/pfp/ktg5.png",
     "https://soggy.cat/img/pfp/friendlypaths.png",
     "https://soggy.cat/img/pfp/cv.png",
