@@ -2,7 +2,7 @@
   <head>
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
     <title>&#65279;</title>
-    <link rel="icon" href="assets/images/literallynothing.ico" />
+    <link rel="icon" href="../assets/images/literallynothing.ico" />
 
     <meta property="og:title" content="&#65279;" />
     <meta name="og:description" content="&#65279;" />
@@ -20,10 +20,10 @@
           <img
             class="sog1"
             height="43px"
-            src="assets/images/darksog.png"
+            src="../assets/images/darksog.png"
             width="40px"
           />
-          <img class="sog2" src="assets/images/brightsog.png" />
+          <img class="sog2" src="../assets/images/brightsog.png" />
         </div>
       </div>
 
@@ -119,20 +119,31 @@
       <script>
         var sog = new Howl({
           src: [
-            "assets/audio/thunk1.ogg",
-            "assets/audio/thunk2.mp3",
+            "../assets/audio/thunklit.ogg",
+            "../assets/audio/thunklit.mp3",
           ],
           volume: 0.5,
           loop: false,
         });
+	var dry = new Howl({
+          src: [
+            "../assets/audio/thunkdark.ogg",
+            "../assets/audio/thunkdark.mp3",
+          ],
+          volume: 0.5,
+          loop: false,
+        });
+
         $(document).on("click", ".sog:not(.playing)", function () {
+	  dry.stop();
           sog.play();
           $(".sog").addClass("playing");
           $(".sog2").css("opacity", 1);
           document.title = "?";
         });
         $(document).on("click", ".sog.playing:not(.other)", function () {
-          sog.pause();
+	  sog.stop();
+	  dry.play();
           $(".sog").removeClass("playing");
           $(".sog2").css("opacity", 0);
           document.title = " ︎";
