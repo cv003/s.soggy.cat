@@ -18,8 +18,8 @@ preload(
     "https://soggy.cat/img/pfp/louis.jpg",
 )
 
-var audio = new Audio("https://soggy.cat/audio/cats.mp3");
-var explode = new Audio("https://files.catbox.moe/plkbq4.mp3");
+var audio = new Audio("assets/audio/cats.mp3");
+var explode = new Audio("assets/audio/boom.mp3");
 
 function showContainer(){
     const overlay = document.querySelector(".overlay");
