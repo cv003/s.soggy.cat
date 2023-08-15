@@ -104,5 +104,5 @@ function displayImages() {
     index = 1;
   }
   images[index-1].style.display = "block";
-  setTimeout(displayImages, 2000); 
+  setTimeout(displayImages, 1935.48387); 
 }
