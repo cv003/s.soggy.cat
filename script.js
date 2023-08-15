@@ -1,6 +1,6 @@
 let index = 0;
 
-var audioLengthInSeconds = 61.967;
+var MusicLengthInSeconds = 61.967; //length of music goes here
 var images = [];
 function preload() {
     for (var i = 0; i < arguments.length; i++) {
@@ -44,7 +44,7 @@ function playMusic(){
 
     player.play();
 
-    setTimeout(playMusic, audioLengthInSeconds*1000);
+    setTimeout(playMusic, MusicLengthInSeconds*1000);
 }
 
 
