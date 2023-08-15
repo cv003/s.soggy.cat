@@ -1,5 +1,5 @@
 # s.soggy.cat
-subdomain for credits, coded by meee
+subdomain for credits, coded by meee (and mat)
 
 ## CREDITS
 ### 🖥️ – FP ([🔗](https://github.com/system2k))
