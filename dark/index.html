@@ -2,7 +2,7 @@
   <head>
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
     <title>&#65279;</title>
-    <link rel="icon" href="https://files.catbox.moe/5grgql.ico" />
+    <link rel="icon" href="../assets/images/literallynothing.ico" />
 
     <meta property="og:title" content="&#65279;" />
     <meta name="og:description" content="&#65279;" />
@@ -11,7 +11,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
   </head>
-  <body>
+  <body scroll="no" style="overflow: hidden; margin: 0px; padding: 0px;">
+    <script> if (window.location.protocol != "https:") window.location.protocol = "https:" </script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
     <main>
@@ -20,10 +22,10 @@
           <img
             class="sog1"
             height="43px"
-            src="https://files.catbox.moe/bo8aqj.png"
+            src="../assets/images/darksog.png"
             width="40px"
           />
-          <img class="sog2" src="https://files.catbox.moe/lgesui.png" />
+          <img class="sog2" src="../assets/images/brightsog.png" />
         </div>
       </div>
 
@@ -119,20 +121,31 @@
       <script>
         var sog = new Howl({
           src: [
-            "https://files.catbox.moe/cwvp85.ogg",
-            "https://files.catbox.moe/wi4mzt.mp3",
+            "../assets/audio/thunklit.ogg",
+            "../assets/audio/thunklit.mp3",
           ],
           volume: 0.5,
           loop: false,
         });
+	var dry = new Howl({
+          src: [
+            "../assets/audio/thunkdark.ogg",
+            "../assets/audio/thunkdark.mp3",
+          ],
+          volume: 0.5,
+          loop: false,
+        });
+
         $(document).on("click", ".sog:not(.playing)", function () {
+	  dry.stop();
           sog.play();
           $(".sog").addClass("playing");
           $(".sog2").css("opacity", 1);
           document.title = "?";
         });
         $(document).on("click", ".sog.playing:not(.other)", function () {
-          sog.pause();
+	  sog.stop();
+	  dry.play();
           $(".sog").removeClass("playing");
           $(".sog2").css("opacity", 0);
           document.title = " ︎";
