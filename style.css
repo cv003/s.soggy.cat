@@ -1,13 +1,13 @@
-@import url(https://db.onlinewebfonts.com/c/a23fd1a5799a0d5b328877750131ba1f?family=Ruji%27s+Handwriting+Font+v.2.0);
+@import url(//db.onlinewebfonts.com/c/a23fd1a5799a0d5b328877750131ba1f?family=Ruji%27s+Handwriting+Font+v.2.0);
 
 @font-face {
   font-family: 'ChirpBold';
-  src:  url('https://abs.twimg.com/responsive-web/client-web/Chirp-Bold.ebb56aba.woff2') format('woff2')
+  src:  url('//abs.twimg.com/responsive-web/client-web/Chirp-Bold.ebb56aba.woff2') format('woff2')
 }
 
 @font-face {
   font-family: 'Chirp';
-  src:  url('https://abs.twimg.com/responsive-web/client-web/Chirp-Regular.80fda27a.woff2') format('woff2')
+  src:  url('//abs.twimg.com/responsive-web/client-web/Chirp-Regular.80fda27a.woff2') format('woff2')
 }
 
 @-webkit-keyframes shake {
@@ -90,7 +90,7 @@ body::-webkit-scrollbar {
 }
 
 .sliding-background {
-  background: url("assets/images/sillylittlecat.gif") repeat-x;
+  background: url("assets/images/sillylittlecat.awebp") repeat-x;
   height: 560px;
   width: 5076px;
   animation: slide 0.9677419355s linear infinite;
