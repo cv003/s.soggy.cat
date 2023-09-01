@@ -11,12 +11,12 @@ function preload() {
 
 preload(
     "assets/images/boom.awebp",
-    "//soggy.cat/img/pfp/ktg5.png",
-    "//soggy.cat/img/pfp/friendlypaths.png",
-    "//soggy.cat/img/pfp/cv.png",
-    "//soggy.cat/img/pfp/mat.jpg",
-    "//soggy.cat/img/pfp/fancycoach.jpg",
-    "//soggy.cat/img/pfp/louis.jpg",
+    "//soggy.cat/img/pfp/ktg5.webp",
+    "//soggy.cat/img/pfp/friendlypaths.webp",
+    "//soggy.cat/img/pfp/cv.webp",
+    "//soggy.cat/img/pfp/mat.webp",
+    "//soggy.cat/img/pfp/fancycoach.webp",
+    "//soggy.cat/img/pfp/louis.webp",
 )
 
 var explode = new Audio("assets/audio/boom.mp3");
