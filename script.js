@@ -10,13 +10,7 @@ function preload() {
 }
 
 preload(
-    "assets/images/boom.awebp",
-    "//soggy.cat/img/pfp/ktg5.webp",
-    "//soggy.cat/img/pfp/friendlypaths.webp",
-    "//soggy.cat/img/pfp/cv.webp",
-    "//soggy.cat/img/pfp/mat.webp",
-    "//soggy.cat/img/pfp/fancycoach.webp",
-    "//soggy.cat/img/pfp/louis.webp",
+    "/assets/images/boom.awebp"
 )
 
 var explode = new Audio("assets/audio/boom.mp3");
