@@ -1,2 +1,2 @@
 # s.soggy.cat
-subdomain for credits, coded by meee and mat
+subdomain for credits and miscellaneous, coded by mat n me
